@@ -7,4 +7,10 @@ export default defineConfig({
   server: {
     open: '/',
   },
+  resolve: {
+    alias: {
+      components: '/src/components',
+      pages: '/src/pages',
+    },
+  },
 });

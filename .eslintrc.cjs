@@ -23,13 +23,20 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
   },
   plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
-    'react-refresh/only-export-components': [
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'import/prefer-default-export': 'off',
+    'react/function-component-definition': [
       'warn',
-      { allowConstantExport: true },
+      {
+        namedComponents: 'arrow-function',
+      },
     ],
   },
 };
