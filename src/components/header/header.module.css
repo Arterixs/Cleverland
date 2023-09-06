@@ -29,6 +29,7 @@
 .person {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 180px;
 }
 
@@ -48,4 +49,9 @@
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.1px;
+}
+
+.img {
+  object-fit: none;
+  border-radius: 50%;
 }
