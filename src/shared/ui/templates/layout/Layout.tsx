@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import { Header } from 'components/header/Header';
-import { Footer } from 'components/footer/Footer';
-import { Sprite } from 'components/sprite/Sprite';
+import { Footer } from 'widgets/footer/Footer';
+import { Header } from 'widgets/header/Header';
+import { Sprite } from 'shared/sprite/Sprite';
 import styles from './layout.module.css';
 
 export const Layout = () => (

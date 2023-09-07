@@ -1,5 +1,5 @@
-import { SvgSprite } from 'components/svg-sprite/Svg';
-import { icons } from 'data/icons-footer';
+import { SvgSprite } from 'shared/svg-sprite/Svg';
+import { icons } from './config';
 import styles from './footer.module.css';
 
 export const Footer = () => (

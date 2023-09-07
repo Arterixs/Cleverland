@@ -1,6 +1,6 @@
 import { Route, Navigate, Routes } from 'react-router-dom';
-import { LayoutMainPage } from 'pages/layout-main/Layout-main';
-import { Layout } from 'pages/layout/Layout';
+import { LayoutMainPage } from 'widgets/layout-main/Layout-main';
+import { Layout } from 'shared/ui/templates/layout/Layout';
 
 export const AuthRouters = () => (
   <Routes>

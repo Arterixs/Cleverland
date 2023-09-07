@@ -10,10 +10,10 @@ export default defineConfig({
   resolve: {
     alias: {
       app: '/src/app',
-      components: '/src/components',
+      widgets: '/src/widgets',
+      shared: '/src/shared',
       pages: '/src/pages',
       types: '/src/types',
-      data: '/src/data',
     },
   },
 });

@@ -1,4 +1,4 @@
-import { SvgSprite } from 'components/svg-sprite/Svg';
+import { SvgSprite } from 'shared/svg-sprite/Svg';
 import { SvgClasses } from 'types/enums/svg/classes-svg';
 import { SvgId } from 'types/enums/svg/id-svg';
 import avatar from '../../assets/images/webp/avatar.webp';

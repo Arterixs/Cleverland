@@ -13,10 +13,10 @@
     "baseUrl": "src",
     "paths": {
       "app/*": ["app/*"],
-      "components/*": ["components/*"],
+      "widgets/*": ["widgets/*"],
+      "shared/*": ["shared/*"],
       "pages/*": ["pages/*"],
-      "types/*": ["types/*"],
-      "data/*": ["data/*"]
+      "types/*": ["types/*"]
     },
 
     /* Bundler mode */
