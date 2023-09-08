@@ -1,4 +1,4 @@
-import { SvgSprite } from 'shared/svg-sprite/Svg';
+import { SvgSprite } from 'shared/ui/svg-sprite/Svg';
 import { icons } from './config';
 import styles from './footer.module.css';
 

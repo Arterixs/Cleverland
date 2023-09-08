@@ -1,0 +1,9 @@
+.item__block {
+  display: flex;
+  gap: 6px;
+}
+
+.item__block_amount {
+  color: var(--grey-black);
+  font-size: 14px;
+}

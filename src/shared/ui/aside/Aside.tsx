@@ -1,24 +1,28 @@
+import { getCompositionSentences } from 'shared/lib/aside/composition';
+import { RULES_LINK, CONTRACT_OFFERTA, TITLE_MENU_CAT } from 'shared/config/naming';
 import styles from './aside.module.css';
 import { categoryInfo } from './config';
 
 export const Aside = () => (
   <article className={styles.article}>
-    <section className={styles.books}>
-      <div className={styles.container}>
-        <div className={styles.wrapper}>
-          <h2 className={styles.title}>Витрина книг</h2>
+    <section className={styles.menu}>
+      <div className={styles.menu__container}>
+        <div className={styles.menu__container_wrapper}>
+          <h2 className={styles.menu__container_title}>{TITLE_MENU_CAT}</h2>
         </div>
       </div>
-      <ul className={styles.list}>
-        {categoryInfo.map((category) => (
-          <li className={styles.list__item} key={category.name}>
-            <p>{category.name}</p>
-            <span className={styles.amount}>{category.amount}</span>
-          </li>
-        ))}
+      <ul className={styles.menu__list}>
+        {categoryInfo.map((category) => {
+          const combinationWords = getCompositionSentences(category.name, category.amount);
+          return (
+            <li className={styles.menu__list_item} key={category.name}>
+              {combinationWords}
+            </li>
+          );
+        })}
       </ul>
     </section>
-    <p className={styles.link}>Правила пользования</p>
-    <p className={styles.link}>Договор оферты</p>
+    <p className={styles.link}>{RULES_LINK}</p>
+    <p className={styles.link}>{CONTRACT_OFFERTA}</p>
   </article>
 );
