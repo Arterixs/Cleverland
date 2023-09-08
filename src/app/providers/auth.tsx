@@ -1,5 +1,6 @@
 import { Route, Navigate, Routes } from 'react-router-dom';
-import { LayoutMainPage } from 'widgets/layout-main/Layout-main';
+import { MainPage } from 'pages/main/Main';
+import { LayoutMainPage } from 'shared/ui/templates/layout-main/Layout-main';
 import { Layout } from 'shared/ui/templates/layout/Layout';
 
 export const AuthRouters = () => (
@@ -7,6 +8,7 @@ export const AuthRouters = () => (
     <Route path='/' element={<Layout />}>
       <Route element={<LayoutMainPage />}>
         <Route index element={<Navigate to='books/all' />} />
+        <Route path='/books/:category' element={<MainPage />} />
       </Route>
     </Route>
   </Routes>
