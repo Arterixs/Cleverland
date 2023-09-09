@@ -1,7 +1,7 @@
 import { SvgSprite } from 'shared/ui/svg-sprite/Svg';
 import { SvgClasses } from 'types/enums/svg/classes-svg';
 import { SvgId } from 'types/enums/svg/id-svg';
-import { DEFAULT_HELLO, TITLE_PROJECT } from 'shared/config/naming';
+import { DEFAULT_HELLO, TITLE_PROJECT } from 'shared/contants/naming';
 import avatar from '../../assets/images/webp/avatar.webp';
 import styles from './header.module.css';
 

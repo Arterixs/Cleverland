@@ -5,4 +5,5 @@ export const enum SvgId {
   VK = 'vk',
   INSTAGRAM = 'instagram',
   FACEBOOK = 'facebook',
+  ARROW_MENU = 'arrow-menu',
 }
