@@ -6,3 +6,9 @@
   margin: 0;
   padding: 0;
 }
+
+#root {
+  letter-spacing: 0.1px;
+  font-style: normal;
+  color: var(--main-dark);
+}
