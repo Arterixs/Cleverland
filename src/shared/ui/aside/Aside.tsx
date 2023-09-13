@@ -10,6 +10,7 @@ import { SvgSprite } from '../svg-sprite/Svg';
 
 export const Aside = () => {
   const classesActiveLink = clsx(styles.active, styles.link, styles['link-underline']);
+  const classesActiveSubLink = clsx(styles.active, styles['active-sublink'], styles.sublink);
   return (
     <aside className={styles.aside}>
       <nav className={styles['nav-main']}>
@@ -27,7 +28,12 @@ export const Aside = () => {
                   const combinationWords = getCompositionSentences(category.name, category.amount);
                   return (
                     <li className={styles.menu__list_item} key={category.name}>
-                      {combinationWords}
+                      <NavLink
+                        to={`books${category.path}`}
+                        className={({ isActive }) => (isActive ? classesActiveSubLink : styles.sublink)}
+                      >
+                        {combinationWords}
+                      </NavLink>
                     </li>
                   );
                 })}
@@ -49,29 +55,6 @@ export const Aside = () => {
             </div>
           </li>
         </ul>
-        {/* <DropDownMenu> */}
-        {/* <section className={styles.menu}>
-        <div className={styles.menu__container}> */}
-        {/* <MenuTitle style={TitleClasses.ASIDE} /> */}
-        {/* <div className={styles.menu__container_wrapper}>
-            <h2 className={styles.menu__container_title}>{TITLE_MENU_CAT}</h2>
-            <SvgSprite style={SvgClasses.ARROW_MENU} svgId={SvgId.ARROW_MENU} />
-          </div>
-        </div> */}
-        {/* <MenuList style={ListClasses.ASIDE}> */}
-        {/* {categoryInfo.map((category) => {
-          const combinationWords = getCompositionSentences(category.name, category.amount);
-          return (
-            <li className={styles.menu__list_item} key={category.name}>
-              {combinationWords}
-            </li>
-          );
-        })} */}
-        {/* </MenuList> */}
-        {/* </section> */}
-        {/* </DropDownMenu> */}
-        {/* <p className={styles.link}>{RULES_LINK}</p>
-      <p className={styles.link}>{CONTRACT_OFFERTA}</p> */}
       </nav>
     </aside>
   );

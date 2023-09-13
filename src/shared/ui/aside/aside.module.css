@@ -110,3 +110,19 @@
   row-gap: 16px;
   padding-left: 20px;
 }
+
+.active-sublink {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  transition: all 0.2s ease;
+}
+
+.sublink {
+  display: flex;
+  column-gap: 6px;
+  width: 100%;
+  flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
