@@ -1,6 +1,7 @@
 .item__block {
   display: flex;
   gap: 6px;
+  align-items: flex-start;
 }
 
 .item__block_amount {
