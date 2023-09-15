@@ -1,6 +1,7 @@
 :root {
   --main-dark: #363636;
   --grey-black: #a7a7a7;
+  --active-link: linear-gradient(232deg, #f83600 -53.35%, #f9d423 297.76%);
 
   --font-regular: 'Mont-regular', sans-serif;
   --font-semiBold: 'Mont-semiBold', sans-serif;

@@ -1,14 +1,6 @@
-import { NavLink } from 'react-router-dom';
-import clsx from 'clsx';
-import { getCompositionSentences } from 'shared/lib/aside/composition';
-import { RULES_LINK, CONTRACT_OFFERTA, TITLE_MENU_CAT } from 'shared/contants/naming';
-import { SvgClasses } from 'types/enums/svg/classes-svg';
-import { SvgId } from 'types/enums/svg/id-svg';
-import { categoryInfo } from './config';
+import { renderNavHardList } from './lib/hard-link';
+import { renderNavSimpleList } from './lib/simple-link';
 import styles from './aside.module.css';
-import { SvgSprite } from '../../shared/ui/svg-sprite/Svg';
-import { renderNavHardList } from './render-props/hard-link/render-hard';
-import { renderNavSimpleList } from './render-props/simple-link/render-text';
 
 const info = [
   {
