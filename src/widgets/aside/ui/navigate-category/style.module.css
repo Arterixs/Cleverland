@@ -10,11 +10,19 @@
   transition: all 0.2s ease;
 }
 
-.sublink {
+.link {
   display: flex;
   column-gap: 6px;
   width: 100%;
   flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  background: var(--hover-link);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.2s ease;
 }
 

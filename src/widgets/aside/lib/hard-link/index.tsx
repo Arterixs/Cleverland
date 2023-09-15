@@ -1,4 +1,4 @@
-import { NavigateCategory } from 'widgets/aside/ui/nav-category';
+import { NavigateCategory } from 'widgets/aside/ui/navigate-category';
 import { PropsLink } from 'types/interfaces/link-props';
 import { WrapperLink } from 'widgets/aside/ui/wrapper-link';
 import { renderBtnDropDown } from '../button-drop';

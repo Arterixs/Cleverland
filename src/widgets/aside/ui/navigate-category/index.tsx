@@ -5,7 +5,7 @@ import { categoryInfo } from 'widgets/aside/config';
 import styles from './style.module.css';
 
 export const NavigateCategory = () => {
-  const classesActiveSubLink = clsx(styles.active, styles.sublink);
+  const classesActiveSubLink = clsx(styles.active, styles.link);
   return (
     <nav className={styles.nav}>
       <ul className={styles.nav__category}>
@@ -15,7 +15,7 @@ export const NavigateCategory = () => {
             <li className={styles.category__link} key={category.name}>
               <NavLink
                 to={`books${category.path}`}
-                className={({ isActive }) => (isActive ? classesActiveSubLink : styles.sublink)}
+                className={({ isActive }) => (isActive ? classesActiveSubLink : styles.link)}
               >
                 {combinationWords}
               </NavLink>

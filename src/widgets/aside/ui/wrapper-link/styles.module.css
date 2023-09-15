@@ -6,8 +6,26 @@
   position: relative;
 }
 
+.nav-main__link-wrap:hover > button {
+  color: var(--orange-svg);
+  transition: all 0.2s ease;
+}
+
 .active {
   background: var(--active-link);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.active + button {
+  color: var(--orange-svg);
+  transition: all 0.2s ease;
+}
+
+.nav-main__link-wrap:hover .link {
+  background: var(--hover-link);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
