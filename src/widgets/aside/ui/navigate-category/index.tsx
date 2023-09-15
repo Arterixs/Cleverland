@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { NavLink } from 'react-router-dom';
 import { getCompositionSentences } from 'shared/lib/aside/composition';
-import { categoryInfo } from 'widgets/aside/config';
+import { categoryInfo } from 'widgets/aside/config/category-info';
 import styles from './style.module.css';
 
 export const NavigateCategory = () => {
