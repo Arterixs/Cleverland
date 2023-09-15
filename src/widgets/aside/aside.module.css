@@ -81,6 +81,17 @@
   align-items: center;
 }
 
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  max-width: 255px;
+  height: 1px;
+  background-image: var(--active-link);
+}
+
 .active {
   background: linear-gradient(232deg, #f83600 -53.35%, #f9d423 297.76%);
   background-clip: text;
@@ -96,8 +107,10 @@
 
 .nav-main__link-wrap {
   width: 100%;
+  max-width: 255px;
   display: flex;
   transition: all 0.2s ease;
+  position: relative;
 }
 
 .nav-category {
@@ -125,9 +138,9 @@
 
 .button {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  width: 40px;
+  min-width: 46px;
   background: transparent;
   border: none;
   cursor: pointer;

@@ -1,11 +1,13 @@
 .nav-main__link-wrap {
   width: 100%;
+  max-width: 255px;
   display: flex;
   transition: all 0.2s ease;
+  position: relative;
 }
 
 .active {
-  background: linear-gradient(232deg, #f83600 -53.35%, #f9d423 297.76%);
+  background: var(--active-link);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -18,8 +20,9 @@
   bottom: -8px;
   left: 0;
   width: 100%;
+  max-width: 255px;
   height: 1px;
-  background-image: linear-gradient(232deg, #f83600 -53.35%, #f9d423 297.76%);
+  background-image: var(--active-link);
 }
 
 .link {

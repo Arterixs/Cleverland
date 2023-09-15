@@ -1,14 +1,4 @@
-import { NavLink } from 'react-router-dom';
-import clsx from 'clsx';
-import styles from './render.module.css';
+import { PropsLink } from 'types/interfaces/link-props';
+import { WrapperLink } from 'widgets/aside/ui/wrapper-link';
 
-export const renderNavSimpleList = ({ title, path }: { title: string; path: string }) => {
-  const classesActiveLink = clsx(styles.active, styles.link);
-  return (
-    <div className={styles['nav-main__link-wrap']}>
-      <NavLink to={path} className={({ isActive }) => (isActive ? classesActiveLink : styles.link)}>
-        {title}
-      </NavLink>
-    </div>
-  );
-};
+export const renderNavSimpleList = ({ title, path }: PropsLink) => <WrapperLink title={title} path={path} />;
