@@ -1,0 +1,13 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav__drop-down {
+  min-width: 46px;
+}

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { NavLink } from 'react-router-dom';
-import { PropsLink, PropsWrapperLink } from 'types/interfaces/link-props';
+import { PropsWrapperLink } from 'types/interfaces/link-props';
 import styles from './styles.module.css';
 
 export const WrapperLink = ({ path, title, renderProp }: PropsWrapperLink) => {
