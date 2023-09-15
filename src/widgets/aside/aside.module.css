@@ -73,10 +73,6 @@
   background-image: linear-gradient(232deg, #f83600 -53.35%, #f9d423 297.76%);
 }
 
-.link {
-  display: block;
-}
-
 .menu__list_item {
   min-height: 24px;
   display: flex;
@@ -125,4 +121,14 @@
   width: 100%;
   flex-wrap: wrap;
   transition: all 0.2s ease;
+}
+
+.button {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
