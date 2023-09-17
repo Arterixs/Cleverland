@@ -31,6 +31,9 @@ module.exports = {
   plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'react/jsx-props-no-spreading': {
+      html: 'ignore',
+    },
     'import/prefer-default-export': 'off',
     'react/function-component-definition': [
       'warn',

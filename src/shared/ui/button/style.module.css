@@ -1,12 +1,13 @@
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .nav__drop-down {
   min-width: 46px;
+}
+
+.nav__drop-down_rotate {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.nav__drop-down_unrotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
 }

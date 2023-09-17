@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { BtnClasses } from 'types/enums/button';
 
-export interface BtnProps {
+export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  styleBtn?: BtnClasses;
+  styleBtn?: BtnClasses[];
 }
