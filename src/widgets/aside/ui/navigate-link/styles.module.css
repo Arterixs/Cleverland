@@ -1,0 +1,35 @@
+.active {
+  background: var(--active-link);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-bold);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  transition: all 0.2s ease;
+}
+
+.category__link {
+  min-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  column-gap: 6px;
+  width: 100%;
+  flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  background: var(--hover-link);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease;
+}

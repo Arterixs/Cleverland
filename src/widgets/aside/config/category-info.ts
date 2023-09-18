@@ -1,11 +1,5 @@
 export const categoryInfo = [
   {
-    id: 0,
-    name: 'Все книги',
-    amount: '0',
-    path: '/all',
-  },
-  {
     id: 1,
     name: 'Бизнес-книги',
     amount: '14',
