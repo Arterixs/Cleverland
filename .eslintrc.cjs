@@ -1,3 +1,7 @@
+const OFF = 0;
+const WARN = 1;
+const ERROR = 2;
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -30,17 +34,20 @@ module.exports = {
   },
   plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
-    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-    'react/jsx-props-no-spreading': {
-      html: 'ignore',
-    },
-    'import/prefer-default-export': 'off',
+    'react-refresh/only-export-components': [WARN, { allowConstantExport: true }],
+    'react/jsx-props-no-spreading': [
+      ERROR,
+      {
+        html: 'ignore',
+      },
+    ],
+    'import/prefer-default-export': OFF,
     'react/function-component-definition': [
       'warn',
       {
         namedComponents: 'arrow-function',
       },
     ],
-    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': WARN,
   },
 };

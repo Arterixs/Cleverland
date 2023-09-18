@@ -8,10 +8,15 @@ import { SvgId } from 'types/enums/svg/id-svg';
 export const ButtonArrow = () => {
   const { isOn, changeStateMenu } = useNavigationContext();
   const classesIsRotateBtn = isOn
-    ? [BtnClasses.NAV_DROP_DOWN, BtnClasses.UNROTATE]
-    : [BtnClasses.NAV_DROP_DOWN, BtnClasses.ROTATE];
+    ? [BtnClasses.NAV_DROP_DOWN, BtnClasses.OPEN]
+    : [BtnClasses.NAV_DROP_DOWN, BtnClasses.CLOSE];
   return (
-    <Button styleBtn={classesIsRotateBtn} onClick={changeStateMenu}>
+    <Button
+      styleBtn={classesIsRotateBtn}
+      onClick={changeStateMenu}
+      aria-expanded={isOn}
+      aria-controls='navigation_category'
+    >
       <SvgSprite style={SvgClasses.ARROW_MENU} svgId={SvgId.ARROW_MENU} />
     </Button>
   );

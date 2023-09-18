@@ -2,12 +2,12 @@
   min-width: 46px;
 }
 
-.nav__drop-down_rotate {
+.nav__drop-down_close {
   transform: rotate(0deg);
   transition: transform 0.2s ease;
 }
 
-.nav__drop-down_unrotate {
+.nav__drop-down_open {
   transform: rotate(180deg);
   transition: transform 0.2s ease;
 }
