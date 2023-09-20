@@ -1,23 +1,25 @@
+import { BOOKS_PATH, CONTRACT_PATH, TERMS_PATH } from 'shared/contants/router';
 import { renderNavHardList } from '../lib/hard-link';
 import { renderNavSimpleList } from '../lib/simple-link';
+import { BOOKS_SHOWCASE, OFERTA, RULES } from './constants';
 
 export const itemsMenu = [
   {
     id: 1,
-    title: 'Витрина книг',
-    path: '/books',
+    title: BOOKS_SHOWCASE,
+    path: `/${BOOKS_PATH}`,
     renderProp: renderNavHardList,
   },
   {
     id: 2,
-    title: 'Правила пользования',
-    path: '/contract',
+    title: RULES,
+    path: `/${CONTRACT_PATH}`,
     renderProp: renderNavSimpleList,
   },
   {
     id: 3,
-    title: 'Договор оферты',
-    path: '/terms',
+    title: OFERTA,
+    path: `/${TERMS_PATH}`,
     renderProp: renderNavSimpleList,
   },
 ];
