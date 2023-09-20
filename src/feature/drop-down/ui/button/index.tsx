@@ -12,7 +12,7 @@ export const ButtonArrow = () => {
     : [BtnClasses.NAV_DROP_DOWN, BtnClasses.CLOSE];
   return (
     <Button
-      styleBtn={classesIsRotateBtn}
+      classNameBtn={classesIsRotateBtn}
       onClick={changeStateMenu}
       aria-expanded={isOn}
       aria-controls='navigation_category'

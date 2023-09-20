@@ -35,6 +35,7 @@ module.exports = {
   plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
     'react-refresh/only-export-components': [WARN, { allowConstantExport: true }],
+    'react/jsx-no-constructed-context-values': OFF,
     'react/jsx-props-no-spreading': [
       ERROR,
       {

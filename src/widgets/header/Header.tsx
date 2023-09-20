@@ -2,12 +2,14 @@ import { SvgSprite } from 'shared/ui/svg-sprite/Svg';
 import { SvgClasses } from 'types/enums/svg/classes-svg';
 import { SvgId } from 'types/enums/svg/id-svg';
 import { DEFAULT_HELLO, TITLE_PROJECT } from 'shared/contants/naming';
+import { BurgerMenu } from 'widgets/burger-menu';
 import avatar from '../../assets/images/webp/avatar.webp';
 import styles from './header.module.css';
 
 export const Header = () => (
   <header className={styles.header}>
     <div className={styles.content}>
+      <BurgerMenu />
       <section className={styles.block_title}>
         <section className={styles.block_logo}>
           <SvgSprite svgId={SvgId.LOGO} style={SvgClasses.LOGO} />
