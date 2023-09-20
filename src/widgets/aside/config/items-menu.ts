@@ -5,19 +5,19 @@ export const itemsMenu = [
   {
     id: 1,
     title: 'Витрина книг',
-    path: '/books/all',
+    path: '/books',
     renderProp: renderNavHardList,
   },
   {
     id: 2,
     title: 'Правила пользования',
-    path: '/books/contract',
+    path: '/contract',
     renderProp: renderNavSimpleList,
   },
   {
     id: 3,
     title: 'Договор оферты',
-    path: '/books/oferta',
+    path: '/terms',
     renderProp: renderNavSimpleList,
   },
 ];

@@ -10,9 +10,10 @@ export const AuthRouters = () => (
     <Route path='/' element={<Layout />}>
       <Route element={<LayoutMainPage />}>
         <Route index element={<Navigate to='books/all' />} />
+        <Route path='/books' element={<Navigate to='all' />} />
         <Route path='/books/:category' element={<MainPage />} />
-        <Route path='/books/oferta' element={<OfertaPage />} />
-        <Route path='/books/contract' element={<ContractPage />} />
+        <Route path='/terms' element={<OfertaPage />} />
+        <Route path='/contract' element={<ContractPage />} />
       </Route>
     </Route>
   </Routes>
