@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { getCompositionSentences } from 'shared/lib/aside/composition';
 import { categoryInfo } from 'widgets/aside/config/category-info';
 import { ALL_BOOKS } from 'widgets/aside/config/constants';
-import { useNavigationContext } from 'shared/lib/context';
+import { useNavigationContext } from 'feature/drop-down/lib/context';
 import styles from './style.module.css';
 import { NavigateLink } from '../navigate-link';
 

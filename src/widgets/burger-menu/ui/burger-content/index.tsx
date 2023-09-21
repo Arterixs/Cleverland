@@ -1,1 +1,3 @@
-export const BurgerContent = () => <div>1</div>;
+import styles from './styles.module.css';
+
+export const BurgerContent = () => <div className={styles.wrapper}>1</div>;

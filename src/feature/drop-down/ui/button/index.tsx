@@ -1,4 +1,4 @@
-import { useNavigationContext } from 'shared/lib/context';
+import { useNavigationContext } from 'feature/drop-down/lib/context';
 import { Button } from 'shared/ui/button';
 import { SvgSprite } from 'shared/ui/svg-sprite/Svg';
 import { BtnClasses } from 'types/enums/button';

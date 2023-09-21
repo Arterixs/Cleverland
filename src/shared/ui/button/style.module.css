@@ -11,3 +11,16 @@
   transform: rotate(180deg);
   transition: transform 0.2s ease;
 }
+
+.burger {
+  display: none;
+  min-width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
