@@ -25,10 +25,7 @@
 }
 
 .nav-main__link-wrap:hover .link {
-  background: var(--hover-link);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--hover-link);
   transition: all 0.2s ease;
 }
 

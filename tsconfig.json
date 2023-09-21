@@ -13,6 +13,7 @@
     "baseUrl": "src",
     "paths": {
       "app/*": ["app/*"],
+      "assets/*": ["assets/*"],
       "widgets/*": ["widgets/*"],
       "feature/*": ["feature/*"],
       "shared/*": ["shared/*"],

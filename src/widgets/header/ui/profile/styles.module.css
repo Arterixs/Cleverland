@@ -1,0 +1,21 @@
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.subtitle {
+  font-family: var(--font-semiBold);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: var(--main-dark);
+}
+
+.img {
+  object-fit: none;
+  border-radius: 50%;
+}

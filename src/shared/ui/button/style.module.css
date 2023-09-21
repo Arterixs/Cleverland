@@ -13,14 +13,8 @@
 }
 
 .burger {
-  display: none;
+  display: block;
   min-width: 32px;
   height: 32px;
   position: relative;
-}
-
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
 }

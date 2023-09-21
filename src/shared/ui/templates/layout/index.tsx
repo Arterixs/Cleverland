@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import { Footer } from 'widgets/footer/Footer';
-import { Header } from 'widgets/header/Header';
+import { Header } from 'widgets/header';
 import { Sprite } from 'shared/ui/sprite/Sprite';
-import styles from './layout.module.css';
+import styles from './styles.module.css';
 
 export const Layout = () => (
   <div className={styles.containter}>
