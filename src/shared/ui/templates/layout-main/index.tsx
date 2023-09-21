@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import { Aside } from 'widgets/aside';
-import { UseMediaScreenMedium } from 'shared/lib/math-media/media-screens';
+import { UseMediaScreenLarge } from 'shared/lib/math-media/media-screens';
 import styles from './styles.module.css';
 
 export const LayoutMainPage = () => {
-  const isLargeScreen = UseMediaScreenMedium();
+  const isLargeScreen = UseMediaScreenLarge();
   return (
     <div className={styles.wrapper}>
       {!isLargeScreen && <Aside />}

@@ -1,12 +1,12 @@
 import { TITLE_PROJECT } from 'shared/contants/naming';
-import { UseMediaScreenMedium } from 'shared/lib/math-media/media-screens';
+import { UseMediaScreenLarge } from 'shared/lib/math-media/media-screens';
 import { BurgerMenu } from 'widgets/burger-menu';
 import { LOGO } from './ui/logo';
 import { Profile } from './ui/profile';
 import styles from './styles.module.css';
 
 export const Header = () => {
-  const isLargeScreen = UseMediaScreenMedium();
+  const isLargeScreen = UseMediaScreenLarge();
   return (
     <header className={styles.header}>
       <div className={styles.content}>
