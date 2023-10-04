@@ -13,3 +13,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 );
 
 // fjsjfsjfjesiofjejfesjofjis
+
+// 2 коммит
